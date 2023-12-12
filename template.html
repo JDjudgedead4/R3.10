@@ -1,31 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Template</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="images/logo.ico" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logo.ico" />
+  </head>
+  <body>
     <nav>
-      <a href="index.hmtl">Accueil</a>
-      <a href="actu.html">Actualité</a>
-      <a href="menu.hmtl">Menu du jour & carte</a>
-      <a href="suppliers.html">Nos fournisseurs</a>
-      <a href="contact.html">contact</a>
+      <a href="#">Accueil</a>
+      <a href="#">À propos</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </nav>
-  <h1><br>Template</h1>
-  <div class="container">
-    <div class="values">
-      <h2>AAA</h2>
-      <p>aaa</p>
-    </div>
-    <div class="values">
-      <h2>BBB</h2>
-      <p>bbb</p>
+    <h1 style="text-align: center">Contactez-nous !</h1>
+    <div class="container">
+      <form
+        action="process.php"
+        method="POST"
+        style="display: flex; flex-direction: column"
+      >
+        <input
+          style="
+            margin-top: 20px;
+            height: 32px;
+            padding-left: 10px;
+            border-radius: 15px;
+            border: 1px solid black;
+          "
+          placeholder="Nom"
+          type="text"
+          id="name"
+          name="name"
+          required
+        />
 
+        <input
+          style="
+            margin-top: 20px;
+            height: 32px;
+            padding-left: 10px;
+            border-radius: 15px;
+            border: 1px solid black;
+          "
+          placeholder="Adresse Mail"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+
+        <input
+          style="
+            margin-top: 20px;
+            height: 32px;
+            padding-left: 10px;
+            border-radius: 15px;
+            border: 1px solid black;
+          "
+          placeholder="Objet"
+          type="text"
+          id="object"
+          name="object"
+          required
+        />
+
+        <textarea
+          style="
+            resize: none;
+            height: 200px;
+            margin-top: 20px;
+            padding-left: 10px;
+            padding-top: 5px;
+            border-radius: 15px;
+            border: 1px solid black;
+          "
+          placeholder="Contenu du message ..."
+          id="message"
+          name="message"
+          required
+        ></textarea>
+
+        <input
+          style="
+            margin-top: 20px;
+            width: 120px;
+            height: 30px;
+            align-self: center;
+            border-radius: 15px;
+            border: 1px solid black;
+          "
+          type="submit"
+          value="Envoyer"
+        />
+      </form>
+
+</div>
+    <h1 style="text-align: center;">Localisation</h1>
+    <div id="map">
+      <!-- Insert your map code here -->
+      <div style="display: flex; justify-content: center;margin-top: 30px;">
+        <iframe style="width: 1000px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.303781638042!2d-0.127758684229984!3d51.50735098147774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c4c9bea6e9%3A0x52963a5addd52a99!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1634766091234!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </div>
-     <a href="mailto:creperie_breton@crepe.to" style="position: fixed; bottom: 20px; right: 20px; background-color: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Contacter la Crêperie</a>
-  </div>
-</body>
+  </body>
+</html>
+    </div>
+  </body>
 </html>
