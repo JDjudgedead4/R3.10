@@ -46,7 +46,7 @@ h1 {
   padding: 20px;
 }
 
-.values {
+.section {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -65,4 +65,41 @@ h2 {
 p {
   color: #333;
   font-size: 1em;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.newsletter-form {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.newsletter-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.newsletter-form input[type="email"] {
+  width: calc(100% - 42px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-form input[type="submit"] {
+  background-color: #5784BA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
 }
