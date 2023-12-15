@@ -151,6 +151,10 @@ p {
   object-fit: cover;
 }
 
+.menuTrigger {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .persona {
     flex-direction: column;
@@ -166,4 +170,28 @@ p {
     width: 100%;
     max-width: 100%;
   }
+
+  nav {
+    flex-direction: column;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+    opacity: 0.5;
+  }
+
+  #menuCheck:checked~nav {
+    height: 50vh;
+    padding: 8px;
+    opacity: 1;
+  }
+
+  #menuTrigger {
+    width: 100%;
+    height: 2rem;
+    display: block;
+    text-align: center;
+  }
+
+
 }
