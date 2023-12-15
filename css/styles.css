@@ -128,3 +128,25 @@ p {
 .image-gallery img:hover {
   transform: scale(1.1);
 }
+
+.persona {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: white;
+  height: fit-content;
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+.persona>.values {
+  padding: 2rem;
+  width: fit-content;
+  max-width: 60%;
+  font-size: 0.9rem;
+}
+
+.persona>img {
+  width: 55%;
+  object-fit: cover;
+}
