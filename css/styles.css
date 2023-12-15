@@ -16,6 +16,7 @@ nav {
   justify-content: center;
   background-color: #192533;
   padding: 0.5em;
+  align-items: center;
 }
 
 nav a {
@@ -102,4 +103,27 @@ p {
   padding: 10px 20px;
   border-radius: 3px;
   cursor: pointer;
+}
+
+
+.image-gallery {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.image-gallery h2 {
+  color: #333;
+}
+
+.image-gallery img {
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1);
 }
