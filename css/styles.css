@@ -195,3 +195,53 @@ p {
 
 
 }
+
+#guestbookForm {
+  margin-bottom: 20px;
+}
+
+#guestbookForm label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#guestbookForm input,
+#guestbookForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+#guestbookForm button {
+  background-color: #5784BA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#guestbookForm button:hover {
+  background-color: #456795;
+}
+
+/* Style des entrées du Livre d'Or */
+.guestbook-entries {
+  margin-top: 20px;
+}
+
+.entry {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.entry h3 {
+  color: #5784BA;
+}
+
+.entry p {
+  color: #333;
+}
