@@ -158,6 +158,17 @@ p {
   margin: 1rem 0;
   border-radius: 6px;
 }
+.persona > .values {
+  padding: 2rem;
+  width: fit-content;
+  max-width: 60%;
+  font-size: 0.9rem;
+}
+
+.persona > img {
+  width: 55%;
+  object-fit: cover;
+}
 
 #menuTrigger {
   display: none;
