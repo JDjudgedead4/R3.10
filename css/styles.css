@@ -151,7 +151,7 @@ p {
   object-fit: cover;
 }
 
-.menuTrigger {
+#menuTrigger {
   display: none;
 }
 
