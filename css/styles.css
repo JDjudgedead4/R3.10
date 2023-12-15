@@ -11,6 +11,27 @@ header {
   padding: 1em;
 }
 
+.links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  right: 0;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 3rem 0 6rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
 nav {
   display: flex;
   justify-content: center;
