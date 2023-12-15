@@ -11,6 +11,27 @@ header {
   padding: 1em;
 }
 
+.links {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  right: 0;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin: 3rem 0 6rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -179,4 +200,54 @@ p {
     display: block;
     text-align: center;
   }
+}
+
+#guestbookForm {
+  margin-bottom: 20px;
+}
+
+#guestbookForm label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#guestbookForm input,
+#guestbookForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+#guestbookForm button {
+  background-color: #5784ba;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#guestbookForm button:hover {
+  background-color: #456795;
+}
+
+/* Style des entrées du Livre d'Or */
+.guestbook-entries {
+  margin-top: 20px;
+}
+
+.entry {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.entry h3 {
+  color: #5784ba;
+}
+
+.entry p {
+  color: #333;
 }
