@@ -16,6 +16,7 @@ nav {
   justify-content: center;
   background-color: #192533;
   padding: 0.5em;
+  align-items: center;
 }
 
 nav a {
