@@ -27,29 +27,9 @@
         method="POST"
         style="display: flex; flex-direction: column"
       >
-        <input
-          style="
-            margin-top: 20px;
-            height: 32px;
-            padding-left: 10px;
-            border-radius: 15px;
-            border: 1px solid black;
-          "
-          placeholder="Nom"
-          type="text"
-          id="name"
-          name="name"
-          required
-        />
+        <input placeholder="Nom" type="text" id="name" name="name" required />
 
         <input
-          style="
-            margin-top: 20px;
-            height: 32px;
-            padding-left: 10px;
-            border-radius: 15px;
-            border: 1px solid black;
-          "
           placeholder="Adresse Mail"
           type="email"
           id="email"
@@ -58,13 +38,6 @@
         />
 
         <input
-          style="
-            margin-top: 20px;
-            height: 32px;
-            padding-left: 10px;
-            border-radius: 15px;
-            border: 1px solid black;
-          "
           placeholder="Objet"
           type="text"
           id="object"
@@ -73,33 +46,13 @@
         />
 
         <textarea
-          style="
-            resize: none;
-            height: 200px;
-            margin-top: 20px;
-            padding-left: 10px;
-            padding-top: 5px;
-            border-radius: 15px;
-            border: 1px solid black;
-          "
           placeholder="Contenu du message ..."
           id="message"
           name="message"
           required
         ></textarea>
 
-        <input
-          style="
-            margin-top: 20px;
-            width: 120px;
-            height: 30px;
-            align-self: center;
-            border-radius: 15px;
-            border: 1px solid black;
-          "
-          type="submit"
-          value="Envoyer"
-        />
+        <input type="submit" value="Envoyer" />
       </form>
       <h1 style="text-align: center">Localisation</h1>
       <div id="map">
