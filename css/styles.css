@@ -19,6 +19,24 @@ header {
   right: 0;
 }
 
+.reservationButton {
+  width: 100%;
+  background-color: #192533;
+  color: white;
+  font-weight: 600;
+  padding: 1em;
+  border: none;
+  border-radius: 6px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.reservationButton:hover {
+  background-color: #456795;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -45,6 +63,24 @@ nav a {
   text-decoration: none;
   padding: 1em;
   margin: 0 10px;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: transform 0.3s;
+  transform: scaleX(0);
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+nav a.selected::after {
+  transform: scaleX(1);
 }
 
 body {
@@ -132,10 +168,23 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.image-gallery {
-  padding: 20px;
+input[type='number'],
+input[type='date'] {
+  width: 10rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
 
+.image-gallery {
+  /* padding: 20px; */
   text-align: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .image-gallery h2 {
@@ -143,12 +192,16 @@ input[type="submit"] {
 }
 
 .image-gallery img {
-  margin: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   height: 200px;
   object-fit: cover;
+  width: 31%;
+}
+
+.image-gallery img:nth-child(4n+1) {
+  width: 100%;
 }
 
 .image-gallery img:hover {
@@ -186,6 +239,8 @@ input[type="submit"] {
     flex-direction: column;
   }
 
+
+
   .persona>img {
     width: 100%;
     height: 200px;
@@ -217,6 +272,11 @@ input[type="submit"] {
     height: 2rem;
     display: block;
     text-align: center;
+  }
+
+  .image-gallery img {
+    width: 100%;
+
   }
 }
 
@@ -268,4 +328,57 @@ input[type="submit"] {
 
 .entry p {
   color: #333;
+}
+
+
+
+.image-container {
+  display: flex;
+  flex-wrap: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  height: auto;
+  /* Adjusted to maintain aspect ratio */
+}
+
+.btnEdit,
+.btnDelete {
+  margin-left: 10px;
+  /* Adjust as needed */
+  padding: 5px 10px;
+  background-color: #5784BA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnEdit:hover,
+.btnDelete:hover {
+  background-color: #456795;
+}
+
+#addImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.admin-page {
+  margin: 0 20px;
 }

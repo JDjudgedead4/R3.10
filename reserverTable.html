@@ -2,75 +2,52 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Contact</title>
+    <title>Crêperie</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="images/logo.ico" />
   </head>
   <body>
     <label id="menuTrigger" for="menuCheck">Menu</label>
     <input type="checkbox" id="menuCheck" hidden />
+
     <nav>
-      <a href="index.html">Accueil</a>
+      <a href="index.html" class="selected">Accueil</a>
       <a href="news.html">Actualité</a>
       <!--       <a href="menu.html">Menu du jour</a> -->
-      <a href="carte.html">Carte</a>
-      <a href="suppliers.html">Nos fournisseurs</a>
+      <!--       <a href="map.html">Carte</a>-->
+      <!-- <a href="suppliers.html">Nos fournisseurs</a> -->
       <a href="livre.html">Livre d'Or</a>
       <a href="contact.html">Contact</a>
       <a href="phototeque.html">Photothèque</a>
       <a href="newsletter.html">Newsletter</a>
     </nav>
-    <h1 style="text-align: center">Contactez-nous !</h1>
     <div class="container">
-      <form
-        action="process.php"
-        method="POST"
-        style="display: flex; flex-direction: column"
-      >
-        <input placeholder="Nom" type="text" id="name" name="name" required />
-
+      <form action="#" method="post" class="newsletter-form">
+        <h3>Réserver une table</h3>
+        <br />
+        <label for="email">Nom de la réservation :</label>
         <input
-          placeholder="Adresse Mail"
-          type="email"
-          id="email"
-          name="email"
-          required
-        />
-
-        <input
-          placeholder="Objet"
           type="text"
-          id="object"
-          name="object"
+          id="nom"
+          name="nom"
+          placeholder="Nom prénom"
           required
         />
 
-        <textarea
-          placeholder="Contenu du message ..."
-          id="message"
-          name="message"
+        <label for="email">Nombre de personnes :</label>
+        <input
+          type="number"
+          id="pplAmount"
+          name="pplAmount"
+          placeholder="Nombre de personnes"
           required
-        ></textarea>
+        />
 
-        <input type="submit" value="Envoyer" />
+        <label for="email">Date :</label>
+        <input type="date" id="date" name="date" placeholder="Date" required />
+        <input type="submit" value="Réserver" />
       </form>
-      <h1 style="text-align: center">Localisation</h1>
-      <div id="map">
-        <!-- Insert your map code here -->
-        <div style="display: flex; justify-content: center; margin-top: 30px">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42667.43681769058!2d-0.810382275284549!3d48.05784415451807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4808fde9fc596bc1%3A0x40d37521e0d16e0!2s53000%20Laval!5e0!3m2!1sen!2sfr!4v1702639022252!5m2!1sen!2sfr"
-            width="100%"
-            height="450"
-            style="border: 0; border-radius: 4px"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
     </div>
-
     <div class="links">
       <a
         href="https://www.instagram.com"
