@@ -19,6 +19,24 @@ header {
   right: 0;
 }
 
+.reservationButton {
+  width: 100%;
+  background-color: #192533;
+  color: white;
+  font-weight: 600;
+  padding: 1em;
+  border: none;
+  border-radius: 6px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.reservationButton:hover {
+  background-color: #456795;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -148,6 +166,15 @@ input[type="submit"] {
   padding: 10px 20px;
   border-radius: 3px;
   cursor: pointer;
+}
+
+input[type='number'],
+input[type='date'] {
+  width: 10rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
 }
 
 .image-gallery {
@@ -324,12 +351,14 @@ input[type="submit"] {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  height: auto; /* Adjusted to maintain aspect ratio */
+  height: auto;
+  /* Adjusted to maintain aspect ratio */
 }
 
 .btnEdit,
 .btnDelete {
-  margin-left: 10px; /* Adjust as needed */
+  margin-left: 10px;
+  /* Adjust as needed */
   padding: 5px 10px;
   background-color: #5784BA;
   color: white;

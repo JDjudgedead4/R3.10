@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crêperie</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logo.ico" />
+  </head>
+  <body>
+    <label id="menuTrigger" for="menuCheck">Menu</label>
+    <input type="checkbox" id="menuCheck" hidden />
+
+    <nav>
+      <a href="index.html" class="selected">Accueil</a>
+      <a href="news.html">Actualité</a>
+      <!--       <a href="menu.html">Menu du jour</a> -->
+      <!--       <a href="map.html">Carte</a>-->
+      <!-- <a href="suppliers.html">Nos fournisseurs</a> -->
+      <a href="livre.html">Livre d'Or</a>
+      <a href="contact.html">Contact</a>
+      <a href="phototeque.html">Photothèque</a>
+      <a href="newsletter.html">Newsletter</a>
+    </nav>
+    <div class="container">
+      <form action="#" method="post" class="newsletter-form">
+        <h3>Réserver une table</h3>
+        <br />
+        <label for="email">Nom de la réservation :</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Adresse e-mail"
+          required
+        />
+
+        <label for="email">Nombre de personnes :</label>
+        <input
+          type="number"
+          id="pplAmount"
+          name="pplAmount"
+          placeholder="Nombre de personnes"
+          required
+        />
+
+        <label for="email">Date :</label>
+        <input type="date" id="date" name="date" placeholder="Date" required />
+        <input type="submit" value="Réserver" />
+      </form>
+    </div>
+    <div class="links">
+      <a
+        href="https://www.instagram.com"
+        style="margin-right: 10px; padding: 10px 20px"
+        ><img
+          src="images/instagram.png"
+          alt="Instagram"
+          style="width: 30px; height: 30px; border-radius: 8px"
+      /></a>
+      <a
+        href="https://www.facebook.com"
+        style="margin-right: 10px; padding: 10px 20px"
+        ><img
+          src="images/facebook.png"
+          alt="Facebook"
+          style="width: 30px; height: 30px; border-radius: 8px"
+      /></a>
+      <a
+        href="https://www.twitter.com"
+        style="margin-right: 10px; padding: 10px 20px"
+        ><img
+          src="images/twitter.png"
+          alt="Twitter"
+          style="width: 30px; height: 30px; border-radius: 8px"
+      /></a>
+    </div>
+    <footer>
+      <!-- Logos pour les réseaux sociaux -->
+
+      <!-- Boutons de contact et CGU -->
+      <a href="mailto:0185">Contacter la Crêperie</a>
+      <a href="CGU.html">CGU</a>
+    </footer>
+  </body>
+</html>
