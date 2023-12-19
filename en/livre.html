@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Livre d'Or - Crêperie</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/logo.ico" />
+  </head>
+  <body>
+    <label id="menuTrigger" for="menuCheck">Menu</label>
+    <input type="checkbox" id="menuCheck" hidden />
+
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="news.html">Actualité</a>
+      <!--       <a href="actu.html">Actualité</a> -->
+      <!--       <a href="menu.html">Menu du jour</a> -->
+      <!--       <a href="map.html">Carte</a>-->
+      <!-- <a href="suppliers.html">Nos fournisseurs</a> -->
+      <a href="livre.html">Livre d'Or</a>
+      <a href="contact.html">Contact</a>
+      <a href="phototeque.html">Photothèque</a>
+      <a href="newsletter.html">Newsletter</a>
+    </nav>
+
+    <div class="container">
+      <h1>Livre d'Or</h1>
+      <form id="guestbookForm">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Ajouter un message</button>
+      </form>
+
+      <div class="guestbook-entries">
+        <div class="entry">
+          <h3>John Doe</h3>
+          <p>Super endroit! Les crêpes étaient délicieuses.</p>
+        </div>
+        <div class="entry">
+          <h3>Alice Smith</h3>
+          <p>L'équipe est très accueillante. J'ai adoré l'atmosphère.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="links">
+      <a
+        href="https://www.instagram.com"
+        style="margin-right: 10px; padding: 10px 20px"
+        ><img
+          src="images/instagram.png"
+          alt="Instagram"
+          style="width: 30px; height: 30px; border-radius: 8px"
+      /></a>
+      <a
+        href="https://www.facebook.com"
+        style="margin-right: 10px; padding: 10px 20px"
+        ><img
+          src="images/facebook.png"
+          alt="Facebook"
+          style="width: 30px; height: 30px; border-radius: 8px"
+      /></a>
+      <a
+        href="https://www.twitter.com"
+        style="margin-right: 10px; padding: 10px 20px"
+        ><img
+          src="images/twitter.png"
+          alt="Twitter"
+          style="width: 30px; height: 30px; border-radius: 8px"
+      /></a>
+    </div>
+    <footer>
+      <!-- Logos pour les réseaux sociaux -->
+
+      <!-- Boutons de contact et CGU -->
+      <a href="mailto:0185">Contacter la Crêperie</a>
+      <a href="CGU.html">CGU</a>
+    </footer>
+  </body>
+</html>
