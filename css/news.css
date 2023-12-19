@@ -31,6 +31,9 @@
 .persona.news p {
   text-align: justify;
 }
+.supplier {
+  background-color: #ffffff;
+}
 
 @media (max-width: 768px) {
   .persona.news {
@@ -39,5 +42,23 @@
 
   .news-container {
     flex-direction: column;
+  }
+
+  #container-center {
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .persona.news {
+    width: 100%;
+  }
+
+  .news-container {
+    flex-direction: column;
+  }
+
+  #container-center {
+    max-width: 100vw;
   }
 }
