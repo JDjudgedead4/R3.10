@@ -1,72 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nos fournisseurs</title>
+    <title>Crêperie</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/news.css" />
+    <link rel="icon" href="images/logo.ico" />
   </head>
   <body>
+    <label id="menuTrigger" for="menuCheck">Menu</label>
+    <input type="checkbox" id="menuCheck" hidden />
+
     <nav>
       <a href="index.html">Accueil</a>
       <a href="news.html">Actualité</a>
       <!--       <a href="menu.html">Menu du jour</a> -->
       <!--       <a href="map.html">Carte</a>-->
-      <a href="suppliers.html">Nos fournisseurs</a>
+      <!-- <a href="suppliers.html">Nos fournisseurs</a> -->
       <a href="livre.html">Livre d'Or</a>
       <a href="contact.html">Contact</a>
       <a href="phototeque.html">Photothèque</a>
       <a href="newsletter.html">Newsletter</a>
     </nav>
 
-    <div class="container" id="container-center">
-      <h1>Nos fournisseurs</h1>
-      <br>
-      <div class="supplier-list">
-        <h2>Fournisseur GourmetFarms</h2>
-        <p>Chez GourmetFarms, nous obtenons les ingrédients de la plus haute qualité pour nos délicieuses crêpes. Leurs produits sont bio et locaux, contribuant à notre engagement envers la durabilité.</p>
-
-        <h2>Fournisseur FruitTopia</h2>
-        <p>FruitTopia nous fournit des fruits frais pour nos garnitures. Leurs produits sont toujours de saison, ce qui garantit une saveur exceptionnelle dans chaque bouchée.</p>
-
-        <h2>Fournisseur DairyDelight</h2>
-        <p>Les produits laitiers de DairyDelight sont essentiels pour nos recettes de crêpes et de sauces. Leur lait et leurs crèmes sont réputés pour leur qualité et leur onctuosité.</p>
+    <div class="container">
+      <div class="supplier">
+        <h1>Fournisseur de Pâte à Crêpes</h1>
+        <p>Fournit des pâtes à crêpes fraîches de haute qualité pour une expérience gustative exceptionnelle.</p>
       </div>
+      
+      <div class="supplier">
+        <h1>Fournisseur de Garnitures Gourmandes</h1>
+        <p>Offre une sélection variée de garnitures sucrées et salées pour agrémenter vos crêpes selon vos préférences.</p>
+      </div>
+      
+      <div class="supplier">
+        <h1>Fournisseur de Matériel de Crêperie</h1>
+        <p>Fournit des équipements de crêperie professionnels, des poêles aux spatules, pour garantir une cuisson parfaite de vos crêpes.</p>
+      </div>      
     </div>
-
-    <div class="links">
-      <a
-        href="https://www.instagram.com"
-        style="margin-right: 10px; padding: 10px 20px"
-        ><img
-          src="images/instagram.png"
-          alt="Instagram"
-          style="width: 30px; height: 30px; border-radius: 8px"
-      /></a>
-      <a
-        href="https://www.facebook.com"
-        style="margin-right: 10px; padding: 10px 20px"
-        ><img
-          src="images/facebook.png"
-          alt="Facebook"
-          style="width: 30px; height: 30px; border-radius: 8px"
-      /></a>
-      <a
-        href="https://www.twitter.com"
-        style="margin-right: 10px; padding: 10px 20px"
-        ><img
-          src="images/twitter.png"
-          alt="Twitter"
-          style="width: 30px; height: 30px; border-radius: 8px"
-      /></a>
-    </div>
-    <footer>
-      <!-- Logos pour les réseaux sociaux -->
-
-      <!-- Boutons de contact et CGU -->
-      <a href="mailto:0185">Contacter la Crêperie</a>
-      <a href="CGU.html">CGU</a>
-    </footer>
+    <form action="index.html" style="display: flex;justify-content: center;">
+      <input class="button-suppliers" type="submit" value="Retour à l'accueil" style="margin-top:20px;margin-bottom:20px;width:180px;height:40px;"></input>
+    </form>
   </body>
 </html>
