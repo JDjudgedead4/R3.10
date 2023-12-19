@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Photothèque</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <label id="menuTrigger" for="menuCheck">Menu</label>
+    <input type="checkbox" id="menuCheck" hidden />
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="news.html">Actualité</a>
+        <a href="livre.html">Livre d'Or</a>
+        <a href="contact.html">Contact</a>
+        <a href="phototeque.html">Photothèque</a>
+        <a href="suppliers.html">Nos fournisseurs</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <div class="admin-page">
+        <h1>Admin - Photothèque</h1>
+
+        <div id="addImage">
+            <p>Ajouter une image </p>
+            <button id="btnAdd">Parourir</button>
+        </div>
+
+        <ul id="imageList">
+            <li id="image-line">
+                <div class="image-container">
+                    <img src="images/gallery/Armorique.jpg" alt="Image 1" />
+                    <button class="btnEdit">Modifier</button>
+                    <button class="btnDelete">Supprimer</button>
+                </div>
+                
+            </li>
+        </ul>
+
+        <!-- Formulaire d'ajout/modification (non fonctionnel) -->
+        <form id="imageForm" style="display: none;">
+            <label for="imageSrc">URL de l'image:</label>
+            <input type="text" id="imageSrc" name="imageSrc" required />
+
+            <label for="imageAlt">Description de l'image:</label>
+            <input type="text" id="imageAlt" name="imageAlt" required />
+
+            <label for="imageWidth">Largeur de l'image (%):</label>
+            <input type="number" id="imageWidth" name="imageWidth" required />
+
+            <button type="submit">Valider</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
