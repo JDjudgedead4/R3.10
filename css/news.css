@@ -40,4 +40,8 @@
   .news-container {
     flex-direction: column;
   }
+
+  #container-center {
+    max-width: 100vw;
+  }
 }
